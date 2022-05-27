@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Cassidy Williams",
+    "imageSrc": "/cassidoo.jpg",
+    "title": "Head of Developer Experience and Education at Remote",
+    "linkSrc": "https://cassidoo.co/"
+  },
+  {
+    "id": 2,
+    "name": "Jason Lengstorf",
+    "imageSrc": "/jason.jpg",
+    "title": "VP of Developer Experience at Netlify ",
+    "linkSrc": "https://www.jason.af/"
+  },
+  {
+    "id": 3,
+    "name": "Alex Riviere",
+    "imageSrc": "/alex.jpg",
+    "title": "Web Developer / Podcaster / Event Organizer",
+    "linkSrc": "https://alex.party/"
+  },
+  {
+    "id": 4,
+    "name": "Aodhan Hamilton",
+    "imageSrc": "/aodhan.png",
+    "title": "Freelancer Web Developer / Part-time Digital Assistant",
+    "linkSrc": "https://twitter.com/suiteasdesign"
+  }
+]
