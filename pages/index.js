@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from 'react';
 import { Box, Text } from '@chakra-ui/react';
 import MyGrid from '../components/MyGrid';
 import Layout from '../components/Layout';
+import Nav from '../components/Nav';
 import { useDimensions } from '@chakra-ui/react';
 
 const Home = () => {
@@ -31,27 +32,30 @@ const Home = () => {
   }, [dimensions]);
 
   return (
-    <Box
-      as="main"
-      w="100vw"
-      h="100vh"
-      display="flex"
-      justifyContent="center"
-      ref={mainRef}
-      alignItems="flex-start"
-    >
-      <Layout>
-        <MyGrid />
-        <Box fontSize={{ base: '20px', sm: '24px' }} mt="30px">
-          <Text display="flex" justifyContent="center">
-            Width: {dimensions && dimensions.borderBox.width}px
-          </Text>
-          <Text display="flex" justifyContent="center">
-            Custom breakpoint size: {size}
-          </Text>
-        </Box>
-      </Layout>
-    </Box>
+    <>
+      <Nav />
+      <Box
+        w="100vw"
+        h="100vh"
+        display="flex"
+        justifyContent="center"
+        ref={mainRef}
+        alignItems="flex-start"
+        as="main"
+      >
+        <Layout>
+          <MyGrid />
+          <Box fontSize={{ base: '20px', sm: '24px' }} mt="30px">
+            <Text display="flex" justifyContent="center">
+              Width: {dimensions && dimensions.borderBox.width}px
+            </Text>
+            <Text display="flex" justifyContent="center">
+              Custom breakpoint size: {size}
+            </Text>
+          </Box>
+        </Layout>
+      </Box>
+    </>
   );
 };
 export default Home;
